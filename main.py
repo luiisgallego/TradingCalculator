@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    price = int(sys.argv[1])
+    price = float(sys.argv[1])
 
     if len(sys.argv) == 2:
         more5 = (price * 105) / 100
@@ -25,8 +25,8 @@ def main():
         )
 
     if len(sys.argv) == 3:
-        secondPrice = int(sys.argv[2])
+        secondPrice = float(sys.argv[2])
         result = 100 - ((secondPrice * 100) / price)
-        print('Difference between', price, 'and', secondPrice, 'is -', result, '%')
+        print('Difference between', price, 'and', secondPrice, 'is', result, '%')
 
 main()
